@@ -27,6 +27,11 @@ gcc -O2 -o chest_uci chest_uci.c
 
 chest_uci works nice for Mac OS, should work under Linux and might even work for Windoze.
 
+## Binaries
+
+The current Release is v1.0 and contains Sources, chest_uci and a complimentary dchest compilation.
+https://github.com/Isarhamster/chest_uci/releases/tag/v1.0
+
 ## Operation
 
 chest_uci was designed to be used with ChessX (see https://chessx.sourceforge.io)
