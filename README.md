@@ -2,6 +2,8 @@
 
 chest_uci is a uci adapter for chest 3.19
 
+It sits between a UCI Client like 'ChessX' and 'chest' - the chess problem solving engine.
+
 ## Copyright
 
 All Rights Reserved.
@@ -40,12 +42,12 @@ You can add commandline arguments like -r to the backend call. Do not use -b.
 
 chest_uci has a second option 'job' which is directly passed to dchest 'j'.
 Supported are the following operations:
-		o	orthodox (normal)
-	    O	stalemate
-	    h	helpmate
-	    H	helpstalemate
-	    s   selfmate
-	    S	selfstalemate 
+- o	orthodox (normal)
+- O	stalemate
+- h	helpmate
+- H	helpstalemate
+- s selfmate
+- S	selfstalemate 
 	    
 ### Supported Options
 - job
@@ -58,10 +60,11 @@ the Log output inside chessx (this will give you the transaction between ChessX 
 Furthermore, chest_uci generates two files:
 - chest_input.txt
 - chest_output.txt
+
 These files are used for communicating jobs and results between chest_uci and chest.
 chest_uci only generates a list of info messages with solutions and advertises the last found 
 solution as bestmove. In chest_output.txt you can find further explanations and insights
-which cannot be transported using UCI._
+which cannot be transported using UCI.
 	   
 ## Limitations / Issues
 
